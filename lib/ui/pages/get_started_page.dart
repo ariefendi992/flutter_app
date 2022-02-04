@@ -66,7 +66,10 @@ class GetStarted extends StatelessWidget {
                 title: 'Get Started',
                 margin: const EdgeInsets.only(top: 50, bottom: 80),
                 width: 220,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, '/-sign-up', (route) => false);
+                },
               ),
             ],
           ),
