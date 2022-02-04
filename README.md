@@ -1,4 +1,4 @@
-# flutter_airplane_v2
+# flutter airplane v2
 
 A new Flutter project.
 
