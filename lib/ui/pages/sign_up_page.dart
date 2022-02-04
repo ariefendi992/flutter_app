@@ -21,7 +21,7 @@ class SignUpPage extends StatelessWidget {
       );
     }
 
-    Widget inputText() {
+    Widget inputSection() {
       Widget nameInput() {
         return const CustomFormField(
           lable: 'Full Name',
@@ -56,7 +56,9 @@ class SignUpPage extends StatelessWidget {
           margin: const EdgeInsets.only(top: 10),
           title: 'Get Started',
           width: double.infinity,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.pushNamed(context, '/bonus');
+          },
         );
       }
 
@@ -105,7 +107,7 @@ class SignUpPage extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: defaultMargin),
           children: [
             title(),
-            inputText(),
+            inputSection(),
             tacButton(),
           ],
         ),
