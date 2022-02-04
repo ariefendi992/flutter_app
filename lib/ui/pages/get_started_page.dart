@@ -35,7 +35,7 @@ class GetStarted extends StatelessWidget {
                   colors: [
                     Colors.white.withOpacity(0.0),
                     Colors.black.withOpacity(0.30),
-                    Colors.black.withOpacity(0.90),
+                    Colors.black.withOpacity(0.95),
                   ],
                 ),
               ),
@@ -68,7 +68,7 @@ class GetStarted extends StatelessWidget {
                 width: 220,
                 onPressed: () {
                   Navigator.pushNamedAndRemoveUntil(
-                      context, '/-sign-up', (route) => false);
+                      context, '/sign-up', (route) => false);
                 },
               ),
             ],
