@@ -28,14 +28,14 @@ class GetStarted extends StatelessWidget {
               width: double.infinity,
               height: 319,
               decoration: BoxDecoration(
-                color: kWhiteColor,
+                // color: kWhiteColor,
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
+                  stops: const [0.0, 0.45],
                   colors: [
-                    Colors.white.withOpacity(0.0),
-                    Colors.black.withOpacity(0.30),
-                    Colors.black.withOpacity(0.95),
+                    Colors.black.withOpacity(0.0),
+                    Colors.black.withOpacity(0.90),
                   ],
                 ),
               ),
