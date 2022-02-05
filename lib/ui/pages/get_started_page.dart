@@ -32,10 +32,10 @@ class GetStarted extends StatelessWidget {
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  stops: const [0.0, 0.45],
+                  // stops: const [0.0, 0.45],
                   colors: [
                     Colors.black.withOpacity(0.0),
-                    Colors.black.withOpacity(0.90),
+                    Colors.black.withOpacity(0.9),
                   ],
                 ),
               ),

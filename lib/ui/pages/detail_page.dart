@@ -106,7 +106,7 @@ class DetailPage extends StatelessWidget {
 
             // NOTE: About
             Container(
-              margin: const EdgeInsets.only(top: 20),
+              margin: const EdgeInsets.only(top: 30),
               width: double.infinity,
               padding: const EdgeInsets.symmetric(vertical: 30, horizontal: 20),
               decoration: BoxDecoration(
