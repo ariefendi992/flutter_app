@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_airplane_v2/shared/theme.dart';
 import 'package:flutter_airplane_v2/ui/widgets/destination_card.dart';
+import 'package:flutter_airplane_v2/ui/widgets/destination_tile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class HomePage extends StatelessWidget {
     Widget header() {
       return Container(
         margin:
-            EdgeInsets.only(left: defaultMargin, right: defaultMargin, top: 30),
+            EdgeInsets.only(left: defaultMargin, right: defaultMargin, top: 20),
         child: Row(
           children: [
             Expanded(
@@ -51,7 +52,7 @@ class HomePage extends StatelessWidget {
       );
     }
 
-    Widget popularDestination() {
+    Widget popularDestinations() {
       return Container(
         margin: const EdgeInsets.only(top: 30),
         child: SingleChildScrollView(
@@ -94,10 +95,64 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget newDestinations() {
+      return Container(
+        margin: EdgeInsets.only(
+          top: 30,
+          left: defaultMargin,
+          right: defaultMargin,
+          bottom: 150,
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'New This Year',
+              style: blackTextStyle.copyWith(
+                fontSize: 18,
+                fontWeight: semiBold,
+              ),
+            ),
+            const DestinationTile(
+              name: 'Danau Beratan',
+              imageUrl: 'assets/image_destination_6.png',
+              city: 'Bali',
+              rating: 4.5,
+            ),
+            const DestinationTile(
+              name: 'Sydney Opera',
+              imageUrl: 'assets/image_destination_7.png',
+              city: 'Australia',
+              rating: 4.7,
+            ),
+            const DestinationTile(
+              name: 'Roma',
+              imageUrl: 'assets/image_destination_8.png',
+              city: 'Italy',
+              rating: 4.8,
+            ),
+            const DestinationTile(
+              name: 'Payung Teduh',
+              imageUrl: 'assets/image_destination_5.png',
+              city: 'Singapore',
+              rating: 4.8,
+            ),
+            const DestinationTile(
+              name: 'Hill Hey',
+              imageUrl: 'assets/image_destination_3.png',
+              city: 'Monaco',
+              rating: 4.8,
+            ),
+          ],
+        ),
+      );
+    }
+
     return ListView(
       children: [
         header(),
-        popularDestination(),
+        popularDestinations(),
+        newDestinations(),
       ],
     );
   }
