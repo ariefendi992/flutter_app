@@ -46,7 +46,7 @@ class DetailPage extends StatelessWidget {
     Widget content() {
       return Container(
         margin: EdgeInsets.only(
-          top: 30,
+          top: 0,
           left: defaultMargin,
           right: defaultMargin,
         ),
@@ -182,7 +182,7 @@ class DetailPage extends StatelessWidget {
               ),
             ),
 
-            // NOTE: BOOK NOW
+            // NOTE: BOOK NOW BUTTON
             Container(
               margin: const EdgeInsets.symmetric(vertical: 30),
               child: Row(
@@ -211,7 +211,9 @@ class DetailPage extends StatelessWidget {
                   CustomButton(
                     title: 'Book Now',
                     width: 170,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/choose-seat');
+                    },
                   )
                 ],
               ),
