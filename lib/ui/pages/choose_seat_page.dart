@@ -299,7 +299,9 @@ class ChooseSetPage extends StatelessWidget {
         title: 'Continue to Checkout',
         width: double.infinity,
         margin: const EdgeInsets.only(top: 30),
-        onPressed: () {},
+        onPressed: () {
+          Navigator.pushNamed(context, '/checkout');
+        },
       );
     }
 

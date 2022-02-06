@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_airplane_v2/ui/pages/bonus_page.dart';
+import 'package:flutter_airplane_v2/ui/pages/checkout_page.dart';
 import 'package:flutter_airplane_v2/ui/pages/choose_seat_page.dart';
 import 'package:flutter_airplane_v2/ui/pages/get_started_page.dart';
 import 'package:flutter_airplane_v2/ui/pages/main_page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/bonus': (context) => const BonusPage(),
         '/main': (context) => const MainPage(),
         '/choose-seat': (context) => const ChooseSetPage(),
+        '/checkout': (context) => const CheckoutPage(),
       },
       // home: const GetStarted(),
     );
